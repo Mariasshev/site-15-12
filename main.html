@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD88</title>
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="FD88" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        if (sessionStorage.getItem('auth') !== 'true') {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+
+</head>
+<body>
+
+<!--  HEADER  -->
+<header class="header bg-white shadow-sm sticky-top">
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg bg-white py-0 py-md-2">
+
+
+            <div class="d-flex align-items-center d-lg-none">
+
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <a class="navbar-brand d-flex me-auto" href="#">
+                <img src="images/logo/logo-dark.svg" alt="FD88 Logo" height="55">
+            </a>
+
+            <div class="d-flex d-lg-none">
+                <a href="#contact" class="btn btn-primary consult-btn py-2 px-3 me-2">Консультація</a>
+            </div>
+
+            <div class="collapse navbar-collapse my-2 my-lg-0" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about-us">Про нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">Продукція</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Часті запитання</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="tel:+380631331488" class="text-primary text-decoration-none fw-bold h6 m-0">
+                            +38 (063) 133-14-88
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="">
+                <div class="d-flex align-items-center ms-auto d-none d-lg-flex">
+                    <a href="tel:+380631331488" class="text-primary text-decoration-none fw-bold h6 m-0 me-3">
+                        +38 (063) 133-14-88
+                    </a>
+                    <a href="#contact" class="btn btn-primary consult-btn py-2 px-3">Консультація</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!--  HERO BLOCK  -->
+    <section class="hero-section text-white d-flex align-items-center justify-content-center text-center">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <h1 class="h1 fw-bold mb-4">Український виробник БПЛА</h1>
+
+                    <p class="fw-light mb-4 h5">
+                        Ми створюємо надійні та високоточні безпілотні системи для оборонних потреб. <br> Наші рішення змінюють уявлення про сучасну авіаційну техніку.
+                    </p>
+
+                    <a href="#contact" class="btn btn-hero-primary h6">Зв'язатися з нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ABOUT US BLOCK  -->
+    <section id="about-us" class="info-section py-8 bg-white">
+        <div class="container-lg">
+            <div class="row align-items-center gy-3 justify-content-center">
+
+                <div class="col-md-6">
+                    <h2 class="h2 fw-bold mb-4">Створюємо БПЛА для українських захисників</h2>
+
+                    <p class="fw-normal h5 mb-4">
+                        FD-88 - український виробник безпілотних літальних апаратів з глибоким розумінням технологічних потреб ринку. Наша місія - створення високоефективних autonomous систем для різних галузей.
+                    </p>
+
+                    <a href="#product" class="details-link fw-medium d-flex align-items-center h5">
+                        Детальніше
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <div class="wrap-img">
+                        <img src="images/drones/LuWA-SS-drone.png" alt="БПЛА FD-88 в польоті" class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  FEATURES  -->
+    <section class="features-section py-8 bg-dark text-white">
+        <div class="container-lg">
+            <h2 class="text-start h1 fw-bold mb-4 mb-lg-5">Переваги наших БПЛА</h2>
+
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon mb-3">
+                        <img src="images/icons/verified.svg" alt="">
+                    </div>
+                    <h4 class="fw-medium h4 mb-3">Надійна конструкція</h4>
+                    <p class="text-white h6 fw-light">Кожен апарат проходить суворі тести для забезпечення максимальної надійності в складних умовах.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon mb-3">
+                        <img src="images/icons/radar.svg" alt="">
+                    </div>
+                    <h4 class="fw-medium h4 mb-3">Висока точність</h4>
+                    <p class="text-white h6 fw-light">Сенсори та системи навігації забезпечують точність до сантиметра в будь-яких умовах.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon mb-3">
+                        <img src="images/icons/contactless.svg" alt="">
+                    </div>
+                    <h4 class="fw-medium h4 mb-3">Сучасні технології</h4>
+                    <p class="text-white h6 fw-light">Оптоволоконний зв'язок та цифрові інтерфейси дають змогу працювати без перебоїв.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon mb-3">
+                        <img src="images/icons/responsive_layout.svg" alt="">
+                    </div>
+                    <h4 class="fw-medium h4 mb-3">Універсальне застосування</h4>
+                    <p class="text-white h6 fw-light">Системи адаптуються до оборонних завдань та цивільних потреб без компромісів.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  PRODUCTS  -->
+
+    <!--  1  -->
+    <section id="product" class="product-spec-section py-8 bg-light-gray">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary">FD88-10</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                    <ul class="spec-list h6">
+                        <li><span class="fw-medium">Розмір рами:</span> 10 дюймів</li>
+                        <li><span class="fw-medium">Модуль керування:</span> ELRS</li>
+                        <li><span class="fw-medium">Дальність дії радіо-зв'язку каналу-керування:</span> 20 км</li>
+                        <li><span class="fw-medium">Частота керування:</span> 170-1050</li>
+                        <li><span class="fw-medium">Максимальна довжина оптичного модуля:</span> 15 км</li>
+                        <li><span class="fw-medium">Максимальна дальність з навантаженням до 3 кг:</span> до 20 км</li>
+                        <li><span class="fw-medium">Корисне навантаження:</span> до 3.000 кг</li>
+                        <li><span class="fw-medium">Максимальний час у повітрі:</span> до 45 хв (без навантаження)</li>
+                        <li><span class="fw-medium">Максимальна швидкість:</span> до 120 км/г 3.000 кг</li>
+                        <li><span class="fw-medium">Крейсерська швидкість:</span> до 70 км/г 3.000 кг</li>
+                        <li><span class="fw-medium">Рекомендована висота використання:</span> до 500 м</li>
+                        <li><span class="fw-medium">Рекомендований діапазон температур використання:</span> -20° C | +40° C</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/drones/fd88-10-drone.png" alt="FD88-10 Квадрокоптер" class="img-fluid product-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  2  -->
+    <section class="product-spec-section py-8 bg-white">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary d-block d-md-none">FD88-13</h2>
+            <div class="row align-items-center">
+
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/drones/fd88-13-drone.png" alt="FD88-13 Гексакоптер" class="img-fluid product-image">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="h2 fw-bold mb-4 text-primary d-none d-md-block">FD88-13</h2>
+                    <ul class="spec-list h6">
+                        <li><span class="fw-medium">Розмір рами:</span> 13 дюймів</li>
+                        <li><span class="fw-medium">Модуль керування:</span> ELRS</li>
+                        <li><span class="fw-medium">Дальність дії радіо-зв'язку каналу-керування:</span> 20 км</li>
+                        <li><span class="fw-medium">Частота керування:</span> 170-1050</li>
+                        <li><span class="fw-medium">Максимальна довжина оптичного модуля:</span> 30 км</li>
+                        <li><span class="fw-medium">Максимальна дальність з навантаженням до 4.500 кг:</span> до 30 км</li>
+                        <li><span class="fw-medium">Корисне навантаження:</span> до 4.500 кг</li>
+                        <li><span class="fw-medium">Максимальний час у повітрі:</span> до 45 хв (без навантаження)</li>
+                        <li><span class="fw-medium">Максимальна швидкість:</span> до 110 км/г 4.500 кг</li>
+                        <li><span class="fw-medium">Крейсерська швидкість:</span> до 70 км/г 4.500 кг</li>
+                        <li><span class="fw-medium">Рекомендована висота використання:</span> до 500 м</li>
+                        <li><span class="fw-medium">Рекомендований діапазон температур використання:</span> -20° C | +40° C</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  3  -->
+    <section class="product-spec-section py-8 bg-light-gray">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary">FD88-10HD zenithal</h2>
+            <div class="row align-items-center">
+
+                <div class="col-md-7 order-2 order-md-1">
+                    <ul class="spec-list h6">
+                        <li><span class="fw-medium">Розмір рами:</span> 10 дюймів</li>
+                        <li><span class="fw-medium">Модуль керування:</span> ELRS</li>
+                        <li><span class="fw-medium">Дальність дії радіо-зв'язку каналу-керування:</span> 20 км</li>
+                        <li><span class="fw-medium">Частота керування:</span> 915/2,4</li>
+                        <li><span class="fw-medium">Відеопередавач:</span> цифрова система</li>
+                        <li><span class="fw-medium">Максимальна дальність з навантаженням до 2 кг:</span> до 20 км</li>
+                        <li><span class="fw-medium">Корисне навантаження:</span> до 2.000 кг</li>
+                        <li><span class="fw-medium">Максимальний час у повітрі:</span> до 20 хв</li>
+                        <li><span class="fw-medium">Максимальна швидкість:</span> до 220 км/г</li>
+                        <li><span class="fw-medium">Крейсерська швидкість:</span> 100 км/г</li>
+                        <li><span class="fw-medium">Рекомендована висота використання:</span> до 3000 м</li>
+                        <li><span class="fw-medium">Протидії тактичним дронам масою до 400 кг:</span> "ОРЛАН-10" SHAHED-136</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 order-1 order-md-2 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/drones/fd88-10hd-drone.png" alt="FD88-10HD zenital Квадрокоптер" class="img-fluid product-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  4  -->
+    <section class="product-spec-section py-8 bg-white">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary d-block d-md-none">FD88-13 optic</h2>
+            <div class="row align-items-center">
+
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/drones/fd88-13-optic.png" alt="FD88-13 Гексакоптер" class="img-fluid product-image">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="h2 fw-bold mb-4 text-primary d-none d-md-block">FD88-13 optic</h2>
+                    <ul class="spec-list h6">
+                        <li><span class="fw-medium">Розмір рами:</span> 13 дюймів</li>
+                        <li><span class="fw-medium">Модуль керування:</span> оптичний</li>
+                        <li><span class="fw-medium">Дальність дії керування:</span> до 30 км</li>
+                        <li><span class="fw-medium">Максимальна довжина оптоволокна оптичного модуля:</span> 30 км</li>
+                        <li><span class="fw-medium">Максимальна дальність з навантаженням до 3 кг:</span> до 30 км</li>
+                        <li><span class="fw-medium">Корисне навантаження:</span> 3.0 - 1.5 кг (в залежності від обраного оптичного модуля)</li>
+                        <li><span class="fw-medium">Максимальний час у повітрі:</span> до 30 хв (без навантаження)</li>
+                        <li><span class="fw-medium">Крейсерська швидкість:</span> до 60 км/г 3.0 кг</li>
+                        <li><span class="fw-medium">Рекомендована висота використання:</span> до 500 м</li>
+                        <li><span class="fw-medium">Рекомендований діапазон температур використання:</span> -20° C | +40° C</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  5  -->
+    <section class="product-spec-section py-8 bg-light-gray">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary">FD88-10 fiber</h2>
+            <div class="row align-items-center">
+
+                <div class="col-md-7 order-2 order-md-1">
+                    <ul class="spec-list h6">
+                        <li><span class="fw-medium">Розмір рами:</span> 10 дюймів</li>
+                        <li><span class="fw-medium">Модуль керування:</span> оптичний</li>
+                        <li><span class="fw-medium">Дальність дії керування:</span> до 15 км</li>
+                        <li><span class="fw-medium">Максимальна довжина оптоволокна оптичного модуля:</span> 15 км</li>
+                        <li><span class="fw-medium">Максимальна дальність з навантаженням до 1.8 кг:</span> до 15 км</li>
+                        <li><span class="fw-medium">Корисне навантаження:</span> 1.8 - 1 кг (в залежності від обраного оптичного модуля)</li>
+                        <li><span class="fw-medium">Максимальний час у повітрі:</span> до 15 хв (без навантаження)</li>
+                        <li><span class="fw-medium">Крейсерська швидкість:</span> до 60 км/г 1.8 кг</li>
+                        <li><span class="fw-medium">Рекомендована висота використання:</span> до 500 м</li>
+                        <li><span class="fw-medium">Рекомендований діапазон температур використання:</span> -20° C | +40° C</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 order-1 order-md-2 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/drones/fd88-10-fiber.png" alt="FD88-10HD zenital Квадрокоптер" class="img-fluid product-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  6  -->
+    <section class="product-spec-section py-8 bg-white">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary d-block d-md-none">LuWA SS zenithal</h2>
+            <div class="row align-items-center">
+
+                <div class="col-md-5 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/drones/LuWA-SS-drone.png" alt="LuWA SS БПЛА літакового типу" class="img-fluid product-image">
+                </div>
+
+                <div class="col-md-7 order-2 order-md-1">
+                    <h2 class="h2 fw-bold mb-4 text-primary d-none d-md-block">LuWA SS zenithal</h2>
+                    <ul class="spec-list h6">
+                        <li><span class="fw-medium">Довжина крила:</span> 2100 мм</li>
+                        <li><span class="fw-medium">Модуль керування:</span> Coalas ELRS</li>
+                        <li><span class="fw-medium">Дальність дії радіо-зв'язку каналу-керування:</span> 40 км</li>
+                        <li><span class="fw-medium">Частота керування:</span> 270-410</li>
+                        <li><span class="fw-medium">Відеопередавач:</span> цифрова система</li>
+                        <li><span class="fw-medium">Максимальна дальність з навантаженням до 2 кг:</span> до 30 км</li>
+                        <li><span class="fw-medium">Корисне навантаження:</span> до 2.000 кг</li>
+                        <li><span class="fw-medium">Максимальний час у повітрі:</span> до 60хв</li>
+                        <li><span class="fw-medium">Максимальна швидкість:</span> до 260 км/г</li>
+                        <li><span class="fw-medium">Крейсерська швидкість:</span> 120 км/г</li>
+                        <li><span class="fw-medium">Рекомендована висота використання:</span> до 5000 м</li>
+                        <li><span class="fw-medium">Протидії тактичним дронам масою до 400 кг:</span> "ОРЛАН-10" SHAHED-136</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  FD88 складові  -->
+    <section class="components-section py-8 bg-light-gray">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-5 text-primary">FD88 <span class="h4 font-normal">складові</span></h2>
+
+            <div class="components-grid">
+
+                <div class="component-column">
+                    <div class="component-header bg-dark text-white fw-bold h5">КАМЕРИ</div>
+                    <ul class="list-unstyled component-list">
+                        <li>Тепловізійна</li>
+                        <li>Нічна</li>
+                        <li>DIGITAL CADDX Walksnail</li>
+                    </ul>
+                </div>
+
+                <div class="component-column">
+                    <div class="component-header bg-dark text-white fw-bold h5">ВІДЕОПЕРЕДАВАЧ</div>
+                    <ul class="list-unstyled component-list">
+                        <li>VTX 1.3 2 W</li>
+                        <li>VTX 3.3 2 W</li>
+                        <li>VTX 5.8 3 W</li>
+                        <li>CADDX Walksnail</li>
+                    </ul>
+                </div>
+
+                <div class="component-column">
+                    <div class="component-header bg-dark text-white fw-bold h5">СИСТЕМИ</div>
+                    <ul class="list-unstyled component-list">
+                        <li>Оптична</li>
+                        <li>Система скида</li>
+                        <li>Плата ініціації</li>
+                        <li>Поворотний блок для камер</li>
+                    </ul>
+                </div>
+
+                <div class="component-column">
+                    <div class="component-header bg-dark text-white fw-bold h5">ELRS</div>
+                    <ul class="list-unstyled component-list">
+                        <li>370 - 620 MHZ</li>
+                        <li>720 - 790 MHZ</li>
+                        <li>868 - 915 MHZ</li>
+                        <li>TBS CROSSFIRE</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  FD88 загальні характеристики -->
+    <section class="general-specs-section py-8">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary">FD88 <span class="h4 fw-normal">загальні характеристики</span></h2>
+
+            <div class="general-specs-grid">
+
+                <div class="spec-column">
+                    <div class="spec-header text-white fw-bold h5 spec-header-daynight">ДЕННА/НІЧНА</div>
+                    <ul class="list-unstyled spec-items">
+                        <li><span class="fw-medium">Тип датчика:</span> сенсор SONY 1/3” CMOS</li>
+                        <li><span class="fw-medium">Роздільна здатність:</span> 1500 TVL</li>
+                        <li><span class="fw-medium">Затримка:</span> 6 мс</li>
+                        <li><span class="fw-medium">Режими:</span> день/ніч/чб</li>
+                        <li><span class="fw-medium">Вхідний сигнал:</span> CVBS</li>
+                    </ul>
+                </div>
+
+                <div class="spec-column">
+                    <div class="spec-header text-white fw-bold h6 spec-header-thermal">ТЕПЛОВІЗІЙНА</div>
+                    <ul class="list-unstyled spec-items">
+                        <li><span class="fw-medium">Тип датчика:</span> неохолоджуваний VOX</li>
+                        <li><span class="fw-medium">Роздільна здатність:</span> 640x512/384x288</li>
+                        <li><span class="fw-medium">Частота кадрів детектора:</span> 50 ГЦ</li>
+                        <li><span class="fw-medium">Лінія:</span> F1.0/4.0 мм</li>
+                        <li><span class="fw-medium">Вхідний сигнал:</span> CVBS</li>
+                    </ul>
+                </div>
+
+                <div class="spec-column">
+                    <div class="spec-header text-white fw-bold h6 spec-header-walksnail">WALKSNAIL AVATAR GT KIT</div>
+                    <ul class="list-unstyled spec-items">
+                        <li><span class="fw-medium">Тип датчика:</span> 1/1.8" CMOS</li>
+                        <li><span class="fw-medium">Роздільна здатність:</span> 1080P/60</li>
+                        <li><span class="fw-medium">Мінімальне освітлення:</span> 0,00001 Lux</li>
+                        <li><span class="fw-medium">Об'єктив:</span> FOV 160°</li>
+                        <li><span class="fw-medium">Частота:</span> 5,725-5,850 GH z</li>
+                        <li><span class="fw-medium">Частота RX-TX:</span> 5.725-5.850 GHz</li>
+                    </ul>
+                </div>
+
+                <div class="spec-column">
+                    <div class="spec-header text-white fw-bold h6 spec-header-vtx">ВІДЕОПЕРЕДАВАЧ</div>
+                    <ul class="list-unstyled spec-items">
+                        <li>VTX Pilotik R3000 4.9-6.2G 3W</li>
+                        <li>Foxeer 5.8G Reaper Extreme 3W 72CH VTx</li>
+                        <li>AKK Ultra Long Range 3W 4.9G 80CH</li>
+                        <li>DIGITAL Walksnail Avatar GT KIT</li>
+                    </ul>
+                </div>
+
+                <div class="spec-column">
+                    <div class="spec-header text-white fw-bold h6 spec-header-elrs">ELRS/TBS</div>
+                    <ul class="list-unstyled spec-items">
+                        <li>ELRS 1: 370-620 MHz</li>
+                        <li>ELRS 2: 720-790 MHz</li>
+                        <li>ELRS 3: 868-915 MHz</li>
+                        <li>TBS CROSSFIRE</li>
+                    </ul>
+                </div>
+
+                <div class="spec-column">
+                    <div class="spec-header text-white fw-bold h6 spec-header-optical">ОПТИЧНА СИСТЕМА</div>
+                    <ul class="list-unstyled spec-items">
+                        <li><span class="fw-medium">Довжина оптоволокна:</span> від 5 до 30 км</li>
+                        <li><span class="fw-medium">Вага:</span> 10 км - 1.2 кг; 15 км - 1.55 кг</li>
+                        <li><span class="fw-medium">Діаметр волокна:</span> 270 мкм</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  FD88 складові БпАК -->
+    <section class="bpak-components-section py-8 bg-light-gray">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4 text-primary">FD88 <span class="h4 fw-normal">складові БпАК</span></h2>
+
+            <div class="bpak-grid">
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">БЕЗПІЛОТНИЙ ЛІТАЛЬНИЙ АПАРАТ</p>
+                    <p class="component-quantity">X25; X50; X100</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">НАЗЕМНА СТАНЦІЯ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ОКУЛЯРИ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">АКБ 6S3P LI-ION</p>
+                    <p class="component-quantity">1 шт на БПЛА<br>2 шт на БПЛА з оптикою</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ЩОГЛА ТЕЛЕСКОПІЧНА ШПИЛЬ 1.60/5.55</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ПЛАТА ІНІЦІАЦІЇ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">АКБ 6S3P LI-ION (ДЛЯ НАЗЕМНОЇ СТАНЦІЇ)</p>
+                    <p class="component-quantity">X2</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">КЕЙС</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">КОМПЛЕКТ ЗАСОБІВ ТЕХНІЧНОГО ОБСЛУГОВУВАННЯ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ЗАРЯДНИЙ ПРИСТРІЙ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">РЮКЗАК ДЛЯ ПЕРЕНОСА ДРОНІВ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ТРАНСПОРТУВАЛЬНА ТАРА</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ПУЛЬТ КЕРУВАННЯ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">МОНІТОР FPV</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">МОДУЛЬ КЕРУВАННЯ TBS 2.4</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">ЧОХОЛ ДЛЯ ЩОГЛИ</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">КАБЕЛЬ НАЗЕМНОЇ СТАНЦІЇ 50 М</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+                <div class="component-card">
+                    <p class="component-name fw-semibold">МОДУЛЬ КЕРУВАННЯ ELRS</p>
+                    <p class="component-quantity">X1</p>
+                </div>
+
+            </div>
+
+            <p class="text-center mt-4 text-muted fw-light h6">
+                Кількість та склад БпАК уточнюється із замовником і вказується окремо у договорі (контракті) на постачання
+            </p>
+        </div>
+    </section>
+
+    <!--  GROUND STATION  -->
+    <section class="ground-station-section py-8 text-white bg-dark">
+        <div class="container-lg">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h1 class="h1 fw-bold mb-4">Наземна станція</h1>
+                    <p class=" h5 mb-0 lh-150 fw-light">
+                        Наземна станція призначена для управління БПЛА оснащені системою <span class="fw-semibold">оптичного</span>, <span class="fw-semibold">цифрового</span> та <span class="fw-semibold">аналогового зв'язку</span>.
+                    </p>
+                    <p class="h5 lh-150 fw-light">
+                        Оптична система з'єднання блоку управління з щоглою дозволяє збільшити дистанцію виносу щогли.
+                    </p>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <img src="images/ground-station/ground-station.png" alt="Наземна станція керування БПЛА" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  GROUND STATION: Основні характеристики  -->
+    <section class="main-specs-text py-8 bg-white">
+        <div class="container-lg">
+            <h3 class="h3 fw-normal mb-4 text-primary">Основні характеристики</h3>
+
+            <div class="specs-group mb-5">
+                <h5 class="h5 fw-bold mb-3 text-primary">Час роботи</h5>
+                <ul class="text-primary specs-list">
+                    <li>До 6 годин, завдяки використанню двох батарей формату 6S3P, що забезпечує тривалу автономну роботу під час виконання місій</li>
+                </ul>
+            </div>
+
+            <div class="specs-group mb-5">
+                <h5 class="h5 fw-bold mb-3 text-primary">Моноблок</h5>
+                <ul class="text-primary specs-list">
+                    <li>15,6 дюймовим мультисенсорним екраном 1366x768. CPU N4500 DDR4 8 ГБ WINDOWS 11 PRO</li>
+                </ul>
+            </div>
+
+            <div class="specs-group mb-5">
+                <h5 class="h5 fw-bold mb-3 text-primary">Сумісність з системами</h5>
+                <ul class="text-primary specs-list">
+                    <li>аналогова, цифрова, оптична</li>
+                </ul>
+            </div>
+
+            <div class="specs-group">
+                <h5 class="h5 fw-bold mb-3 text-primary">Інтерфейси</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class=" text-primary specs-list">
+                            <li>Вихід аналогове відео – 3 шт</li>
+                            <li>HDMI in – 2 шт</li>
+                            <li>XT 60 out 4.2 – 25.2 V bat – 2 шт</li>
+                            <li>USB 3.0 – 2шт з опцією зарядки</li>
+                            <li>FC/UPC-FC/UPC– 2 шт</li>
+                            <li>mini jack in/out DVR</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="text-primary specs-list">
+                            <li>HDMI out – 1 шт</li>
+                            <li>XT 60 in 25.2 V bat – 2 шт</li>
+                            <li>XT 90 in 25.2 V – 1 шт</li>
+                            <li>USB type C DP/QC – 2 шт</li>
+                            <li>8 pin JR – 1 шт</li>
+                            <li>Запис на micro SD card 32Gb – 1шт</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  GROUND STATION: Загальні складові  -->
+    <section class="general-components-section py-8 bg-light-gray">
+        <div class="container-lg">
+            <h3 class="text-start text-md-center h3 fw-normal mb-5 text-primary">Загальні складові</h3>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-6">
+                            <h5 class="fw-semibold mb-3 text-primary h5">Антена керування «YAGI-UDA»</h5>
+                            <ul class="specs-list">
+                                <li><span class="fw-medium">Діапазон частот:</span> 170-1100</li>
+                                <li><span class="fw-medium">VSWR:</span> &lt; 1.2</li>
+                                <li><span class="fw-medium">Імпеданс:</span> 50 (Ом)</li>
+                                <li><span class="fw-medium">Поляризація:</span> лінійна</li>
+                                <li><span class="fw-medium">Підсилення:</span> 13 (dBi)</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+                            <h5 class="fw-semibold mb-3 text-primary h5">Антена типу «Patch»</h5>
+                            <ul class="specs-list">
+                                <li><span class="fw-medium">Діапазон частот:</span> 1.2/3.3/3.0-5.0/5.8/6.1-7.2</li>
+                                <li><span class="fw-medium">VSWR:</span> &lt; 1.5</li>
+                                <li><span class="fw-medium">Імпеданс:</span> 50 (Ом)</li>
+                                <li><span class="fw-medium">Поляризація:</span> RHCP/LHCP</li>
+                                <li><span class="fw-medium">Підсилення:</span> 23 (dBi)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-6 col-lg-6">
+                            <h5 class="fw-semibold mb-3 text-primary h5">Антена типу «Helical»</h5>
+                            <ul class="specs-list">
+                                <li><span class="fw-medium">Діапазон частот:</span> 1.2/3.3/3.0-5.0/5.8/6.1-7.2</li>
+                                <li><span class="fw-medium">VSWR:</span> &lt; 1.3</li>
+                                <li><span class="fw-medium">Імпеданс:</span> 50 (Ом)</li>
+                                <li><span class="fw-medium">Поляризація:</span> RHCP</li>
+                                <li><span class="fw-medium">Підсилення:</span> 13 (dBi)</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+                            <h5 class="fw-semibold mb-3 text-primary h5">Відеоприймач</h5>
+                            <ul class="specs-list">
+                                <li><span class="fw-medium">Діапазон частот:</span> 1.2/3.3/3.0-5.0/5.8/6.1-7.2</li>
+                                <li><span class="fw-medium">NARROW-BANDFILTER:</span> так</li>
+                                <li><span class="fw-medium">Імпеданс:</span> 50 (Ом)</li>
+                                <li><span class="fw-medium">Роз'єми:</span> 2 SMA-K</li>
+                                <li><span class="fw-medium">Чутливість:</span> -93 (dBm)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Battery  -->
+    <section class="battery-spec-section py-8 bg-white">
+        <div class="container-lg">
+            <div class="row align-items-start">
+
+                <div class="col-12">
+                    <div class="row gy-1">
+                        <div class="col-md-8">
+                            <h1 class="h1 fw-bold mb-2 text-primary">6S3P CFT LI-ION SAMSUNG</h1>
+                            <h4 class="h4 text-primary mb-4 fw-light">Акумуляторна батарея</h4>
+
+                            <div class="d-flex text-primary fw-normal h6">
+                                <div class="me-4">Розмір:</div>
+                                <div class="me-4">Ширина: 65 мм</div>
+                                <div class="me-4">Діаметр: 130 мм</div>
+                                <div>Висота: 75 мм</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+                            <img src="images/battery/6S3P-battery.png" alt="Акумуляторна батарея Samsung" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="specs-list text-primary">
+                                <li><span class="fw-medium">Ємність:</span> 15 000 mAh</li>
+                                <li><span class="fw-medium">Конфігурація:</span> 6S3P (18 елементів)</li>
+                                <li><span class="fw-medium">Номінальний розрядний струм:</span> 105 A</li>
+                                <li><span class="fw-medium">Максимальний імпульсний струм:</span> 150 A</li>
+                                <li><span class="fw-medium">Максимальний струм розряду:</span> 135 A</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="specs-list text-primary">
+                                <li><span class="fw-medium">Тип зварювальної пластини:</span> нікель</li>
+                                <li><span class="fw-medium">Номінальна напруга:</span> 22.2 V (3.7 V на елемент)</li>
+                                <li><span class="fw-medium">Максимальна напруга:</span> 25.2 V (4.2 V на елемент)</li>
+                                <li><span class="fw-medium">Мінімальна напруга:</span> 16.2 V (2.7 V на елемент)</li>
+                                <li><span class="fw-medium">Вага:</span> 1.320 кг</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="specs-list text-primary">
+                                <li><span class="fw-medium">Струм заряду:</span> 12.6 A</li>
+                                <li><span class="fw-medium">Тип акумулятора:</span> Li-ION</li>
+                                <li><span class="fw-medium">Роз'єм балансира:</span> JST-XH 2.54 (7 контактів)</li>
+                                <li><span class="fw-medium">Силовий роз'єм:</span> XT60 F (12 AWG)</li>
+                                <li><span class="fw-medium">Діапазон експлуатації:</span> -20°C до +60°C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section py-8 bg-white" id="faq">
+        <div class="container-lg">
+            <h1 class="h1 fw-bold mb-3 text-primary">Запитання</h1>
+            <p class="h5 text-primary fw-light mb-5">Відповіді на найпоширеніші питання про наші безпілотні технології</p>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Які типи БПЛА ви виробляєте?
+                        </button>
+                    </h5>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ми спеціалізуємося на розробці розвідувальних та багатоцільових безпілотних комплексів для різних галузей застосування.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Скільки коштує розробка індивідуального рішення?
+                        </button>
+                    </h5>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Вартість залежить від складності проекту та специфічних вимог замовника. Ми пропонуємо індивідуальний підхід до кожного клієнта.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Чи надаєте ви навчання з управління БПЛА?
+                        </button>
+                    </h5>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Так, ми проводимо професійне навчання та сертифікацію операторів безпілотних систем для різних рівнів підготовки.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Яка гарантія на ваші системи?
+                        </button>
+                    </h5>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ми надаємо повний гарантійний супровід та технічну підтримку протягом усього терміну експлуатації обладнання.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Як швидко можна отримати прототип?
+                        </button>
+                    </h5>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Терміни розробки прототипу залежать від складності проекту, але в середньому становлять від 2 до 4 місяців.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-5 pt-4">
+                <h3 class="h3 fw-bold mb-3 text-primary">Маєте ще запитання?</h3>
+                <p class="fw-light h5 mb-4">Наші фахівці готові надати детальну консультацію</p>
+                <a href="#contact" class="btn btn-outline-dark h6 fw-medium">Зв'язатися</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section py-8 bg-light-gray">
+        <div class="container-lg">
+
+            <div class="row d-flex justify-content-center gy-4">
+                <!-- LEFT SIDE -->
+                <div class="col-md-6 col-lg-6">
+                    <h1 class="fw-bold mb-2 h1 text-primary">Форма зворотного зв'язку</h1>
+
+                    <p class="text-primary mb-4 h5 fw-normal">
+                        Залишіть контактні дані, і наш менеджер зв'яжеться з вами
+                    </p>
+
+                    <ul class="contact-info list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                        <span class="me-2">
+                           <img src="images/icons/email.svg" alt="">
+                        </span>
+                            <a href="mailto:oshennon.llc@gmail.com" class="text-primary h6 mb-0">
+                                oshennon.llc@gmail.com
+                            </a>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-center">
+                        <span class="me-2">
+                            <img src="images/icons/phone.svg" alt="">
+                        </span>
+                            <a href="tel:+380631331488" class="text-primary h6 mb-0">
+                                +38 (063) 133-14-88
+                            </a>
+                        </li>
+
+                        <li class="mb-3 d-flex align-items-center h6">
+                        <span class="me-2">
+                            <img src="images/icons/geo.svg" alt="">
+                        </span>
+                            м. Київ
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT SIDE (FORM) -->
+                <div class="col-md-6 col-lg-6">
+                    <h5 class="fw-semibold mb-4 text-primary h5">Ваші контакти</h5>
+
+                    <form id="contactForm">
+
+                        <div class="mb-3">
+                            <label class="form-label h6">Ім'я *</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label h6">Телефон *</label>
+                                <input type="text" class="form-control" name="phone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label h6">Електронна пошта</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label h6">Повідомлення</label>
+                            <textarea class="form-control" rows="5" name="message" placeholder="Напишіть ваше звернення"></textarea>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" checked id="agree" required>
+                            <label class="form-check-label h6 fw-normal" for="agree">
+                                Я даю згоду на обробку персональних даних
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center justify-content-md-start">
+                                <button class="btn btn-primary px-4 py-2 fs-16" type="submit">
+                                    Надіслати
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3 py-md-5 bg-dark text-white">
+        <div class="container-lg">
+
+            <div class="row mb-3 align-items-start">
+
+                <div class="col-lg-6">
+                    <a class="" href="#about-us">
+                        <img src="images/logo/logo-light.svg" alt="FD88 Logo" height="70" class="footer-logo">
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <nav class="footer-nav d-flex flex-wrap justify-content-lg-end gap-3">
+                        <a class="text-white text-decoration-none fw-semibold fs-16" href="#about-us">Про нас</a>
+                        <a class="text-white text-decoration-none fw-semibold fs-16" href="#product">Послуги</a>
+                        <a class="text-white text-decoration-none fw-semibold fs-16" href="#faq">Часті питання</a>
+                        <a class="text-white text-decoration-none fw-semibold fs-16" href="#contact">Контакти</a>
+                    </nav>
+                </div>
+
+            </div>
+
+
+            <div class="row align-items-end">
+
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="fw-semibold mb-2 h6">Контакти</p>
+                    <a href="tel:+380631331488" class="d-block text-white mb-1 h6 fw-normal">+38 (063) 133-14-88</a>
+                    <a href="mailto:oshennon.llc@gmail.com" class="d-block text-white h6 fw-normal">oshennon.llc@gmail.com</a>
+                </div>
+
+                <hr class="border-secondary opacity-25 mt-3 mb-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small fw-light text-white mb-0 opacity-75">© 2025 FD-88. Всі права захищені</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+
+        const data = {
+            name: form.name.value,
+            phone: form.phone.value,
+            email: form.email.value,
+            message: form.message.value,
+        };
+
+        try {
+            const res = await fetch("https://wispy-dew-0c97.sevcenkomaria72.workers.dev/form", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+
+            const result = await res.json();
+            console.log(result);
+
+            if (result.ok) {
+                alert("Ваше звернення надіслано! Наш менеджер зв'яжеться з вами найближчим часом!");
+                form.reset(); // очистка формы
+            } else {
+                alert("Помилка при відправці: " + result.error);
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Сталася помилка при відправці. Спробуйте ще раз.");
+        }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
