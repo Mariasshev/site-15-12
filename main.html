@@ -1010,8 +1010,11 @@
 <script>
     document.getElementById("contactForm").addEventListener("submit", async (e) => {
         e.preventDefault();
-
         const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        // UI Feedback (UX Best Practice)
+        submitBtn.classList.add('is-loading');
 
         const data = {
             name: form.name.value,
@@ -1027,18 +1030,21 @@
                 body: JSON.stringify(data),
             });
 
-            const result = await res.json();
-            console.log(result);
+            // 1. Спочатку читаємо як текст, щоб уникнути крашу на порожній відповіді
+            const text = await res.text();
+            const result = text ? JSON.parse(text) : {};
 
-            if (result.ok) {
-                alert("Ваше звернення надіслано! Наш менеджер зв'яжеться з вами найближчим часом!");
-                form.reset(); // очистка формы
+            if (res.ok) {
+                alert("Ваше звернення надіслано!");
+                form.reset();
             } else {
-                alert("Помилка при відправці: " + result.error);
+                throw new Error(result.error || `Server error: ${res.status}`);
             }
         } catch (err) {
             console.error(err);
-            alert("Сталася помилка при відправці. Спробуйте ще раз.");
+            alert(`Помилка: ${err.message}`);
+        } finally {
+            submitBtn.classList.remove('is-loading');
         }
     });
 </script>
