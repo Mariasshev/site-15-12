@@ -1013,8 +1013,7 @@
         const form = e.target;
         const submitBtn = form.querySelector('button[type="submit"]');
 
-        // UI Feedback (UX Best Practice)
-        submitBtn.classList.add('is-loading');
+        submitBtn.classList.add('is-loading'); // Показуємо спінер
 
         const data = {
             name: form.name.value,
@@ -1030,19 +1029,30 @@
                 body: JSON.stringify(data),
             });
 
-            // 1. Спочатку читаємо як текст, щоб уникнути крашу на порожній відповіді
-            const text = await res.text();
-            const result = text ? JSON.parse(text) : {};
+            // Читаємо відповідь як текст, щоб побачити, що там насправді
+            const textResponse = await res.text();
+            console.log("Raw Server Response:", textResponse); // Дивимось у консоль!
+
+            let result;
+            try {
+                // Пробуємо перетворити в JSON тільки якщо рядок не порожній
+                result = textResponse ? JSON.parse(textResponse) : {};
+            } catch (jsonError) {
+                console.error("JSON Parse Error. Server sent:", textResponse);
+                throw new Error("Сервер повернув некоректні дані (не JSON).");
+            }
 
             if (res.ok) {
-                alert("Ваше звернення надіслано!");
+                alert("Ваше звернення надіслано! Менеджер зв'яжеться з вами.");
                 form.reset();
             } else {
-                throw new Error(result.error || `Server error: ${res.status}`);
+                // Якщо сервер повернув помилку (наприклад 400 або 500)
+                throw new Error(result.error || `Помилка сервера: ${res.status}`);
             }
+
         } catch (err) {
-            console.error(err);
-            alert(`Помилка: ${err.message}`);
+            console.error("Fetch/Logic Error:", err);
+            alert(`Не вдалося відправити форму: ${err.message}`);
         } finally {
             submitBtn.classList.remove('is-loading');
         }
