@@ -460,3 +460,91 @@ body {
 .navbar-toggler {
     border: none !important;
 }
+
+.system-card {
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+
+.system-header {
+    background-color: #111827; /* Темний колір з скріншоту */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700; /* Bold */
+    padding: 12px 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.system-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #212529;
+    text-align: justify; /* Або left, якщо хочете як у звичайному тексті */
+}
+
+.system-body a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.system-body a:hover {
+    text-decoration: underline;
+}
+
+
+/* Стилі для блоку навігації по продукції */
+.product-nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    border: none;
+    /* Легка тінь у спокійному стані */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ефект при наведенні */
+.product-nav-link:hover .product-card {
+    transform: translateY(-5px); /* Піднімається вгору */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Тінь стає глибшою */
+}
+
+.product-img-wrapper {
+    height: 220px; /* Фіксована висота для картинки */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Світлий фон під картинкою (можна прибрати) */
+}
+
+.product-img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Картинка вписується повністю без обрізки */
+}
+
+.product-title {
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111827;
+    text-transform: uppercase;
+    margin: 0;
+}
